@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Game of Life</h1>
+    <div class="controls" role="group" aria-label="Управление">
+      <button id="btn-start" type="button">Старт</button>
+      <button id="btn-stop" type="button">Стоп</button>
+      <button id="btn-forward" type="button">Итерация вперёд</button>
+      <button id="btn-back" type="button">Итерация назад</button>
+      <button id="btn-generate" type="button">Сгенерировать новую позицию</button>
+      <button id="btn-clear" type="button">Очистить поле</button>
+    </div>
+    <div class="status">
+      <span id="gen-counter">Поколение: 0</span>
+      <span id="population">Живых: 0</span>
+      <span id="run-state">Состояние: остановлено</span>
+    </div>
+    <div class="workspace">
+      <canvas id="board" width="800" height="400"></canvas>
+      <aside id="palette" aria-label="Палитра паттернов">
+        <h2>Паттерны</h2>
+        <div id="pattern-list" class="pattern-list"></div>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="src/ui.js"></script>
+</body>
+</html>

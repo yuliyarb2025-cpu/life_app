@@ -1,0 +1,9 @@
+# opencode dependencies
+.opencode/node_modules/
+.opencode/package-lock.json
+
+# OS
+.DS_Store
+
+# logs
+*.log
